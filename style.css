@@ -188,6 +188,7 @@ nav {
 
 .header__description--para {
   font-size: 12px;
+  font-weight: bold;
   color: #a0aec0;
   margin-top: 80px;
 }
@@ -392,6 +393,11 @@ QUALITY WORK
 
 .quality__img--wrapper {
   width: 50%;
+}
+
+.quality__img {
+  border: 1px solid rgba(160, 174, 192, 0.3);
+  border-radius: 5px;
 }
 
 /* 
@@ -650,8 +656,8 @@ FOOTER
 */
 
 footer {
-  background-color: #6415ff;
   padding: 80px 0;
+  background-color: #6415ff;
 }
 
 .links {
@@ -729,6 +735,7 @@ footer {
   margin: 0;
 }
 
+/* SMALL LAPTOPS */
 @media (max-width: 1024px) {
   .nav__links {
     display: none;
@@ -736,5 +743,97 @@ footer {
 
   .btn__menu {
     display: block;
+  }
+
+  .row {
+    max-width: 980px;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+  .row {
+    max-width: 710px;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__description--para {
+    font-size: 16px;
+  }
+
+  .header__description {
+    width: 100%;
+    text-align: center;
+    max-width: 540px;
+  }
+
+  .header__description--title {
+    font-size: 30px;
+  }
+
+  .header__description--subtitle {
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 437px;
+  }
+
+  .header__description--para {
+    font-size: 14px;
+    margin-top: 48px;
+  }
+
+  .header__description--img {
+    padding: 0;
+    max-width: 542px;
+    margin-bottom: 16px;
+  }
+
+  .header__img--wrapper {
+    width: 90%;
+  }
+
+  .service {
+    width: 50%;
+  }
+
+  .quality__description--heading,
+  .steps__description--heading {
+    font-size: 36px;
+  }
+
+  .quality__description--para {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .values__points--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .values__points-heading--container {
+    margin-top: 24px;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 60%;
+    margin-bottom: 48px;
   }
 }

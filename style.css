@@ -223,13 +223,19 @@ input {
 }
 
 input:hover {
-  border-color: #6415ff;
+  border-color: rgba(160, 174, 192);
 }
 
 input::placeholder {
   color: rgba(160, 174, 192, 0.5);
   font-size: 16px;
   border-color: #6415ff;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #6415ff;
 }
 
 .header__btn,
@@ -741,12 +747,32 @@ footer {
     display: none;
   }
 
+  .header__description--title {
+    font-size: 36px;
+  }
+
+  .header__description--subtitle {
+    font-size: 16px;
+  }
+
   .btn__menu {
     display: block;
   }
 
   .row {
     max-width: 980px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .header__btn {
+    right: 2%;
+  }
+
+  img {
+    max-width: 512px;
   }
 }
 
@@ -783,6 +809,10 @@ footer {
   input {
     width: 100%;
     max-width: 437px;
+  }
+
+  .header__btn {
+    right: 11%;
   }
 
   .header__description--para {
